@@ -1,0 +1,16 @@
+[Unit]
+Description=Apache Kafka server (broker)
+Documentation=http://kafka.apache.org/documentation.html
+Requires=network.target
+After=network.target
+
+[Service]
+Type=simple
+Environment=JAVA_HOME=/usr/lib/jvm/default-java
+ExecStart=/opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/kraft/server.properties
+ExecStop=/opt/kafka/bin/kafka-server-stop.sh
+Restart=on-failure
+RestartSec=60s
+
+[Install]
+WantedBy=multi-user.target
