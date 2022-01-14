@@ -1,0 +1,1 @@
+# vagrant-kafka-without-zookeeper
