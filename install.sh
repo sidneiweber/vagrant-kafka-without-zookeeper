@@ -7,9 +7,9 @@ sudo apt-get clean
 
 sudo mkdir -p /opt/kafka
 cd /opt/kafka
-sudo wget https://dlcdn.apache.org/kafka/3.0.0/kafka_2.12-3.0.0.tgz
-sudo tar xvzf kafka_2.12-3.0.0.tgz --strip 1
-sudo rm -rf kafka_2.12-3.0.0.tgz
+sudo wget https://dlcdn.apache.org/kafka/3.3.1/kafka_2.12-3.3.1.tgz
+sudo tar xvzf kafka_2.12-3.3.1.tgz --strip 1
+sudo rm -rf kafka_2.12-3.3.1.tgz
 
 sudo mkdir -p /kafka/logs
 
